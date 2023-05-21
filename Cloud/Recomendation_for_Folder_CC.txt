@@ -1,0 +1,2 @@
+Infrastructure: This folder can contain files related to the cloud infrastructure (e.g., Terraform scripts, configuration files).
+Deployment: Store any deployment-related files here (e.g., Dockerfiles, Kubernetes manifests).
