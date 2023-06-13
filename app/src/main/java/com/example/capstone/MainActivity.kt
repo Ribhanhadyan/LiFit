@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val moveLogin = Intent(this@MainActivity, HomeActivity::class.java)
                 startActivity(moveLogin)
                 }
+
+            
         }
         when (v?.id) {
             R.id.btn_register -> {
