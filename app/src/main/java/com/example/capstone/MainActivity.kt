@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(moveLogin)
                 }
 
-            
+
         }
         when (v?.id) {
             R.id.btn_register -> {

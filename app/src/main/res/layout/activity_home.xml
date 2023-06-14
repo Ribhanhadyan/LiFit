@@ -6,37 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <Button
+        android:id="@+id/cameraXButton"
+        android:layout_width="210dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:scaleType="fitCenter"
+        android:text="Camera"
+        app:layout_constraintBottom_toTopOf="@+id/uploadButton"
+        app:layout_constraintStart_toStartOf="@+id/uploadButton" />
+
     <ImageView
-        android:id="@+id/imgv_camera"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:layout_marginTop="148dp"
-        android:src="@drawable/kucing"
+        android:id="@+id/previewImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/tv_bmi_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="BMI Text"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/imgv_camera"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:srcCompat="@drawable/ic_place_holder" />
 
     <Button
-        android:id="@+id/btn_test"
-        android:layout_width="125dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="16dp"
-        android:text="Test"
-        android:textSize="24sp"
+        android:id="@+id/galleryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Galery"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraXButton"
+        app:layout_constraintEnd_toEndOf="@+id/uploadButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cameraXButton"
+        app:layout_constraintTop_toTopOf="@+id/cameraXButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Upload"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgv_camera" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
