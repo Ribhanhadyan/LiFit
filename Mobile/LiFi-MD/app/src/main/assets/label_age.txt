@@ -1,0 +1,6 @@
+0-5 Tahun
+12-25 Tahun
+26-45 Tahun
+46-65 Tahun
+6-11 Tahun
+>66 Tahun

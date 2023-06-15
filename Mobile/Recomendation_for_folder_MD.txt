@@ -1,3 +1,0 @@
-Source Code: This folder can contain the source code for the mobile app (e.g., Android or iOS).
-Assets: Store any design assets, such as images or icons, that the mobile app requires.
-Tests: Create a folder for unit tests or any other testing-related files.
