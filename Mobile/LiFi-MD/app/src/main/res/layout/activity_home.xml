@@ -10,13 +10,12 @@
         android:id="@+id/imgv_camera"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:layout_marginTop="148dp"
         android:scaleType="centerCrop"
-        android:src="#FF5722"
+        android:src="@drawable/shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        tools:layout_editor_absoluteY="91dp" />
 
     <Button
         android:id="@+id/btn_camera"
@@ -24,15 +23,15 @@
         android:layout_height="wrap_content"
         android:layout_margin="21dp"
         android:text="Open Camera"
-        app:layout_constraintBottom_toTopOf="@+id/imgv_camera"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/imgv_camera"
+        app:layout_constraintEnd_toEndOf="@+id/imgv_camera"
+        app:layout_constraintStart_toStartOf="@+id/imgv_camera" />
 
     <Button
         android:id="@+id/btn_test"
         android:layout_width="125dp"
         android:layout_height="75dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="72dp"
         android:text="Test"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

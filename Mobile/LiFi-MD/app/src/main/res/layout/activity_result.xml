@@ -49,27 +49,27 @@
         android:id="@+id/tv_classification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="44dp"
         android:text="Classification"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tv_result_classification"
-        app:layout_constraintHorizontal_bias="0.836"
-        app:layout_constraintStart_toStartOf="@+id/tv_result_classification"
-        app:layout_constraintTop_toBottomOf="@+id/tv_result_classification" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_recom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_classification"
+        app:layout_constraintVertical_bias="0.277" />
 
     <TextView
         android:id="@+id/tv_bmi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="37dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="76dp"
         android:text="BMI"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tv_result_bmi"
-        app:layout_constraintStart_toStartOf="@+id/tv_result_bmi"
-        app:layout_constraintTop_toBottomOf="@+id/tv_result_bmi" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_recom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_classification"
+        app:layout_constraintVertical_bias="0.279" />
 
     <TextView
         android:id="@+id/tv_underweight"
@@ -78,6 +78,7 @@
         android:layout_marginTop="8dp"
         android:text="Underweight"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_classification"
         app:layout_constraintStart_toStartOf="@+id/tv_classification"
         app:layout_constraintTop_toBottomOf="@+id/tv_classification" />
 
@@ -85,11 +86,11 @@
         android:id="@+id/tv_underweight_bmi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
         android:layout_marginTop="8dp"
         android:text="Below 18.5"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_underweight"
+        app:layout_constraintEnd_toEndOf="@+id/tv_bmi"
+        app:layout_constraintStart_toStartOf="@+id/tv_bmi"
         app:layout_constraintTop_toBottomOf="@+id/tv_bmi" />
 
     <TextView
@@ -118,7 +119,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Over Weight"
+        android:text="Obesse"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/tv_normal_weight"
         app:layout_constraintTop_toBottomOf="@+id/tv_normal_weight" />
@@ -134,107 +135,15 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_normal_weight_bmi" />
 
     <TextView
-        android:id="@+id/tv_obese"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Obese"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_overweight"
-        app:layout_constraintTop_toBottomOf="@+id/tv_overweight" />
-
-    <TextView
-        android:id="@+id/tv_obese_bmi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="30 and above"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_overweight_bmi"
-        app:layout_constraintTop_toBottomOf="@+id/tv_overweight_bmi" />
-
-    <TextView
-        android:id="@+id/tv_class_i"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Class I"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_obese"
-        app:layout_constraintTop_toBottomOf="@+id/tv_obese" />
-
-    <TextView
-        android:id="@+id/tv_class_i_bmi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="30-34.9"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_obese_bmi"
-        app:layout_constraintTop_toBottomOf="@+id/tv_obese_bmi" />
-
-    <TextView
-        android:id="@+id/tv_class_ii"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Class II"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_class_i"
-        app:layout_constraintTop_toBottomOf="@+id/tv_class_i" />
-
-    <TextView
-        android:id="@+id/tv_class_ii3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="35-39.9"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_class_i_bmi"
-        app:layout_constraintTop_toBottomOf="@+id/tv_class_i_bmi" />
-
-    <TextView
-        android:id="@+id/tv_class_iii"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Class III"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_class_ii"
-        app:layout_constraintTop_toBottomOf="@+id/tv_class_ii" />
-
-    <TextView
-        android:id="@+id/tv_class_iii_bmi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="40 and above"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_class_ii3"
-        app:layout_constraintTop_toBottomOf="@+id/tv_class_ii3" />
-
-    <TextView
         android:id="@+id/tv_classification_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="120dp"
         android:text="Classification"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
-
-    <TextView
-        android:id="@+id/tv_bmi_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="112dp"
-        android:text="BMI"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/tv_classification_result"
         app:layout_constraintTop_toBottomOf="@+id/tv_result" />
 
     <TextView
@@ -254,46 +163,46 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="8dp"
-        android:text="Age :"
+        android:text="Age       :"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_gender" />
 
     <TextView
         android:id="@+id/tv_result_classification"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="225dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
         android:background="@color/hijau"
         android:gravity="center"
         android:padding="4dp"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/tv_classification_result"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/tv_classification_result"
-        app:layout_constraintTop_toBottomOf="@+id/tv_classification_result" />
-
-    <TextView
-        android:id="@+id/tv_result_bmi"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/hijau"
-        android:gravity="center"
-        android:padding="4dp"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/tv_bmi_result"
-        app:layout_constraintStart_toStartOf="@+id/tv_bmi_result"
-        app:layout_constraintTop_toBottomOf="@+id/tv_bmi_result" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_classification_result"
+        app:layout_constraintVertical_bias="0.002" />
 
     <TextView
         android:id="@+id/tv_recom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:text="Recomended For You"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tv_classification_result"
-        app:layout_constraintTop_toBottomOf="@+id/tv_class_iii" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_classification" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="tv_classification" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
